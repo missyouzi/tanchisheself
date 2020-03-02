@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #panel{
+            width: 800px;
+            height: 600px;
+            background: skyblue;
+            margin: 60px auto;
+            border: 5px solid orangered;
+            border-radius: 5px;
+            /*定位*/
+            position: relative;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+   <div id="panel"></div>
+
+<script src="js/UnderScore.js"></script>
+<script src="js/Food.js"></script>
+<script src="js/Snake.js"></script>
+<script src="js/Game.js"></script>
+<script>
+    var panel = document.getElementById('panel');
+    var game = new Game(panel);
+    game.render();
+    game.run();
+</script>
+</body>
+</html>
